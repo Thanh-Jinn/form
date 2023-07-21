@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Thông tin liên hệ</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đăng kí để nhận thông tin về khóa học.</h1>
+      <form action="/process_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="submit-button-container">
+          <input type="submit" value="Gửi" class="submit-button" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
